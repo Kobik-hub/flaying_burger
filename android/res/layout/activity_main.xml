@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+  <com.flappy.game.DateView
+      android:layout_width="234dp"
+      android:layout_height="48dp"
+      android:layout_marginBottom="20dp"
+      android:background="@drawable/shape_under_line"
+      android:fontFamily="sans-serif-condensed-light"
+      android:gravity="center"
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.514"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/lunchGameBtn"
+      android:layout_width="176dp"
+      android:layout_height="79dp"
+      android:background="@drawable/shape_btn"
+      android:inputType="textCapSentences"
+      android:text="@string/play"
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="30dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.582"
+      tools:ignore="TextViewEdits" />
+
+  <TextView
+      android:id="@+id/banner"
+      android:layout_width="321dp"
+      android:layout_height="72dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/shape_title"
+      android:fontFamily="sans-serif-condensed-light"
+      android:gravity="center"
+      android:text="@string/flying_burger"
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="40sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/fullNameDisplay"
+      android:layout_width="254dp"
+      android:layout_height="59dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/shape_under_line"
+      android:fontFamily="sans-serif-condensed-light"
+      android:gravity="center"
+      android:text=""
+      android:textColor="@android:color/holo_red_dark"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

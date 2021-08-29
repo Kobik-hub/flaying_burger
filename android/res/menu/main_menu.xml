@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:spinnerMode="dialog"
+    >
+
+    <item android:id="@+id/logout"
+        android:title="@string/logout"
+        app:showAsAction="never"
+       />
+    <item android:id="@+id/Top10Score"
+        android:title="@string/top_scors"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/ChangeLanguage"
+        android:title="@string/change_language"
+        app:showAsAction="never"
+        />
+</menu>

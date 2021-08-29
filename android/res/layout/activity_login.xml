@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <EditText
+
+        android:id="@+id/passwordTextLoginPage"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_btn"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:paddingLeft="5sp"
+        android:password="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="#067561"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextLoginPage" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="363dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_title"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailTextLoginPage"
+        android:layout_width="298dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_btn"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="@string/email_address"
+        android:paddingLeft="5sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="#067561"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="374dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/shape_btn"
+        android:inputType="textCapSentences"
+        android:text="@string/login"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextLoginPage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerPageBtn"
+        android:layout_width="143dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+
+        android:background="@drawable/shape_btn"
+        android:inputType="textCapSentences"
+        android:text="@string/register"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
